@@ -1,7 +1,8 @@
 # ResuTeX
-A LaTeX resume/CV template, currently used for my own resume.
+A LaTeX resume/CV template, currently used for my own resume. Forked from Micheal
+Henning's ResuTex project. Updated to allow arbitray sized lists of items.
 
-***See the compiled document [here](https://github.com/myklhenn/ResuTeX/blob/master/mhenning-resume.pdf).***
+***See the compiled document [here](https://github.com/fleetww/ResuTeX/blob/master/fleetww-resume.pdf).***
 
 This document implements a JSON-like syntax for defining its components, based 
 on `\newcommand` macros defined at the top of the file. A sample of the resume's 
@@ -27,12 +28,12 @@ used to format the actual content, follows:
 \begin{document}
 
 \ContactInfo
-  {\Name{Michael Henning}}
-  {\AddressLineOne{3100 Ferry Ave, Apt. D117}}
+  {\Name{Fleetww}}
+  {\AddressLineOne{3446 Abbot St}}
   {\AddressLineTwo{Bellingham, WA 98225}}
-  {\Email{mykl951@gmail.com}}
-  {\Phone{206-999-4513}}
-  {\Website{https://linkedin.com/in/myklhenn}}
+  {\Email{fleetww@wwu.edu}}
+  {\Phone{(425) 281-3444}}
+  {\Website{https://linkedin.com/in/william-fleetwood}}
 ```
 
 The macro definitions can be modified to change the output formatting and 
