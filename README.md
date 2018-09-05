@@ -11,15 +11,13 @@ used to format the actual content, follows:
 
 ```latex
 \newcommand{\Name}[1]{#1} % (no extra formatting on macros like these)
-\newcommand{\AddressLineOne}[1]{#1}
-\newcommand{\AddressLineTwo}[1]{#1}
 \newcommand{\Phone}[1]{#1}
 \newcommand{\Email}[1]{\href{mailto:#1}{<#1>}}
 \newcommand{\Website}[1]{\texttt{\href{#1}{\textul{#1}}}}
-\newcommand{\ContactInfo}[6]{
+\newcommand{\ContactInfo}[5]{
   \part*{#1}
   \begin{tabular}{ m{12em} m{24em} }
-    #2 & \texttt{#4 #5} \\ #3 & #6
+    #2 & \texttt{#4} \\ #3 & \texttt{#5}
   \end{tabular}
 }
 
@@ -28,9 +26,7 @@ used to format the actual content, follows:
 \begin{document}
 
 \ContactInfo
-  {\Name{Fleetww}}
-  {\AddressLineOne{3446 Abbot St}}
-  {\AddressLineTwo{Bellingham, WA 98225}}
+  {\Name{William Fleetwood}}
   {\Email{fleetww@wwu.edu}}
   {\Phone{(425) 281-3444}}
   {\Website{https://linkedin.com/in/william-fleetwood}}
