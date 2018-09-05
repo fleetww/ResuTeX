@@ -33,23 +33,19 @@
 
 %--- CONTACT INFO
 \newcommand{\Name}[1]{#1} % (no extra formatting on macros like these)
-\newcommand{\AddressLineOne}[1]{#1}
-\newcommand{\AddressLineTwo}[1]{#1}
 \newcommand{\Phone}[1]{#1}
 \newcommand{\Email}[1]{\href{mailto:#1}{<#1>}}
 \newcommand{\Website}[1]{\texttt{\href{#1}{\textul{#1}}}}
-\newcommand{\ContactInfo}[7]{
+\newcommand{\ContactInfo}[5]{
   \part*{#1}
-  \begin{tabular}{ @{} m{12em} m{12em} m{12em} @{} }
-    #2 & \texttt{#4} & #7 \\ #3 & #5 & #6
+  \begin{tabular}{ @{} m{10em} m{10em} @{} }
+    \texttt{#2} & \texttt{#4} \\ #3 & \texttt{#5}
   \end{tabular}
   %1: \Name
-  %2: \AddressLineOne
-  %3: \AddressLineTwo
-  %4: \Phone
-  %5: \Email
-  %6: \Website
-  %7: \Website
+  %2: \Email
+  %3: \Phone
+  %4: \Website
+  %5: \Website
 }
 
 %--- EDUCATION
@@ -78,6 +74,7 @@
 \newcommand{\startcourses}{
 \begin{multicols}{2}
 \begin{itemize}[leftmargin=.5cm]
+\itemsep0em
 }
 \newcommand{\closecourses}{
 \end{itemize}
@@ -166,8 +163,6 @@
 
 \ContactInfo
   {\Name{William Fleetwood}}
-  {\AddressLineOne{3446 Abbott St}}
-  {\AddressLineTwo{Bellingham, WA 98225}}
   {\Email{fleetww@wwu.edu}}
   {\Phone{(425) 281-3444}}
   {\Website{https://linkedin.com/in/william-fleetwood}}
@@ -177,7 +172,7 @@
   {\College{Western Washington University}}
   {\Major{Computer Science, Honors BS}}
   {\StartYear{September 2014}}
-  {\GradYear{June 2018 (Expected)}}
+  {\GradYear{June 2018}}
   {\GPA{3.3}}
 \startcourses
   {\CourseItem
@@ -186,7 +181,7 @@
   }
   {\CourseItem
     {\CourseName{Formal Languages \& Functional Programming}}
-    {\CourseCode{CSCI 301}}https://github.com/fleetww/wim
+    {\CourseCode{CSCI 301}}
   }
   {\CourseItem
   		{\CourseName{Computer Systems I}}
@@ -231,14 +226,40 @@
 \startcourses
   {\CourseItem
     {\CourseName{Operating System Internals}}
-    {\CourseCode{CSCI 509 (current)}}
+    {\CourseCode{CSCI 509}}
   }
   {\CourseItem
     {\CourseName{Automata \& Formal Language Theory}}
-    {\CourseCode{CSCI 510 (current)}}
+    {\CourseCode{CSCI 510}}
+  }
+  {\CourseItem
+    {\CourseName{Computer Languages}}
+    {\CourseCode{CSCI 512}}
+  }
+  {\CourseItem
+    {\CourseName{Parallel Computation}}
+    {\CourseCode{CSCI 515}}
+  }
+  {\CourseItem
+    {\CourseName{Machine Learning Algorithms}}
+    {\CourseCode{CSCI 571}}
+  }
+  {\CourseItem
+    {\CourseName{Analysis of Algorithms}}
+    {\CourseCode{CSCI511}}
   }
 \closecourses
 \section*{Experience}
+\Experience
+    {\Workplace{DocuSign}}
+    {\JobTitle{Software Engineer Intern}}
+    {\Location{Seattle, WA}}
+    {\StartDate{June 2018}}
+    {\EndDate{September 2018}}
+\startexpitems
+    {\ExpItem{Appliance Team, working on making various aspects of the DocuSign service into separate packages that can either be hosted internally by DocuSign, or externally in a customer's own datacenter. This allows customers to maintain control over their cryptographic keys, storage of documents, and the overall signing experience.}}
+    {\ExpItem{Full stack development, .NET focused environment, distributed networks, cryptographic hardware\textbackslash software, asymmetric and symmetric keys, and low\textbackslash high level networking experience,}}
+\closeexpitems
 \Experience
 	{\Workplace{Syrilla Services}}
 	{\JobTitle{Software Development Intern/IT Support}}
