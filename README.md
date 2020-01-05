@@ -27,8 +27,8 @@ used to format the actual content, follows:
 
 \ContactInfo
   {\Name{William Fleetwood}}
-  {\Email{fleetww@wwu.edu}}
-  {\Phone{(425) 281-3444}}
+  {\Email{fleetww@school.edu}}
+  {\Phone{(xxx) xxx-xxxx}}
   {\Website{https://linkedin.com/in/william-fleetwood}}
 ```
 
